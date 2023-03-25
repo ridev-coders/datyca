@@ -80,7 +80,6 @@ nav ul li a {
     /* background: white; */
     margin-left: 18%;
     margin-right: 18%;
-    margin-top: auto;
 }
 
 .section .content .title {
@@ -90,9 +89,13 @@ nav ul li a {
     line-height: 61px;
 }
 
-.section .content .paragraph {
+.section .content .wrapper {
+    margin-block-start: 70px;
+}
+
+.section .content .wrapper .paragraph {
     color: white;
-    font-weight: 350;
+    font-weight: 50;
     font-size: 21px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -103,9 +106,23 @@ nav ul li a {
     padding-top: 10%;
 }
 
-.section.s1 .content, .section.s2 .content {
+.section.s1 .content,
+.section.s2 .content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 2rem;
-    height: 30vh;
+}
+
+.section.s1 .content {
+    margin-top: auto;
+    margin-bottom: 5%;
+}
+
+.section.s2 .content {
+    margin-top: 5%;
+}
+
+.section.s2 .content .paragraph-title {
+    color: white;
+    font-size: 27px;
 }
