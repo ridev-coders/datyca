@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Homepage</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(
+                    89.06deg,
+                    #000517 3.87%,
+                    #041839 99.97%
+                );
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 60px;
+                background-color: transparent;
+                display: flex; /* Added */
+                justify-content: center; /* Added */
+            }
+
+            nav ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            nav ul li {
+                margin: 0 20px;
+            }
+
+            nav ul li a {
+                display: block;
+                text-decoration: none;
+                font-family: usual, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13.7156px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.05em;
+
+                color: #ffffff;
+            }
+
+            .section {
+                /* width: 100%; */
+                height: 100vh;
+                border-top: 1px solid #1441b7;
+                border: linear-gradient(
+                    to bottom,
+                    rgba(20, 65, 183, 0.45) 0%,
+                    rgba(20, 65, 183, 1) 50%,
+                    rgba(20, 65, 183, 0.45) 100%
+                );
+                scroll-snap-align: start;
+                padding-left: 18%;
+                padding-right: 18%;
+            }
+
+            .section.s1 {
+                border-top: none;
+                padding-top: 10%;
+            }
+
+            .logo {
+                width: 33vw;
+                height: auto;
+                padding: 20px;
+            }
+
+            .bg-lines {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 70vw;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#chi-siamo">CHI SIAMO</a></li>
+                    <li><a href="#i-nostri-valori">I NOSTRI VALORI</a></li>
+                    <li><a href="#perche-noi">PERCHÉ NOI</a></li>
+                    <li><a href="#cosa-facciamo">COSA FACCIAMO</a></li>
+                    <li><a href="#settori">SETTORI</a></li>
+                    <li><a href="#contatti">CONTATTI</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="chi-siamo" class="section s1">
+                <img
+                    class="logo"
+                    src="img/Datyca_logo_white.svg"
+                    alt="Datyca Logo"
+                />
+                <img
+                    class="bg-lines"
+                    src="img/bg-lines.svg"
+                    alt="Datyca bg lines"
+                />
+            </section>
+            <section id="i-nostri-valori" class="section s2">
+                <h2>Sezione Valori</h2>
+            </section>
+            <section id="perche-noi" class="section s3">
+                <h2>Sezione Perché Noi</h2>
+            </section>
+            <section id="cosa-facciamo" class="section s4">
+                <h2>Sezione Cosa Facciamo</h2>
+            </section>
+            <section id="settori" class="section s5">
+                <h2>Sezione Settori</h2>
+            </section>
+            <section id="contatti" class="section 6">
+                <h2>Sezione Contatti</h2>
+            </section>
+        </main>
+    </body>
+</html>
