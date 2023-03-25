@@ -50,6 +50,7 @@ nav ul li a {
     height: auto;
     padding: 0px;
     margin-left: 18%;
+    margin-top: 10%;
 }
 
 .bg-lines {
@@ -103,13 +104,12 @@ nav ul li a {
 
 .section.s1 {
     border-top: none;
-    padding-top: 10%;
 }
 
 .section.s1 .content,
 .section.s2 .content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.2fr 2fr;
     grid-gap: 2rem;
 }
 
