@@ -4,6 +4,10 @@ body {
     background: linear-gradient(89.06deg, #000517 3.87%, #041839 99.97%);
 }
 
+body * {
+    font-family: usual, sans-serif;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -31,7 +35,6 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    font-family: usual, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13.7156px;
@@ -40,6 +43,20 @@ nav ul li a {
     letter-spacing: 0.05em;
 
     color: #ffffff;
+}
+
+.logo {
+    width: 33vw;
+    height: auto;
+    padding: 0px;
+    margin-left: 18%;
+}
+
+.bg-lines {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 70vw;
 }
 
 .section {
@@ -53,8 +70,32 @@ nav ul li a {
         rgba(20, 65, 183, 0.45) 100%
     );
     scroll-snap-align: start;
-    padding-left: 18%;
-    padding-right: 18%;
+    /* padding-left: 18%;
+    padding-right: 18%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.section .content {
+    /* background: white; */
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: auto;
+}
+
+.section .content .title {
+    color: #f21763;
+    font-weight: 350;
+    font-size: 51.4336px;
+    line-height: 61px;
+}
+
+.section .content .paragraph {
+    color: white;
+    font-weight: 350;
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
 }
 
 .section.s1 {
@@ -62,15 +103,9 @@ nav ul li a {
     padding-top: 10%;
 }
 
-.logo {
-    width: 33vw;
-    height: auto;
-    padding: 20px;
-}
-
-.bg-lines {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 70vw;
+.section.s1 .content, .section.s2 .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+    height: 30vh;
 }
