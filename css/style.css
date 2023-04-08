@@ -16,6 +16,7 @@ header {
     background-color: transparent;
     display: flex; /* Added */
     justify-content: center; /* Added */
+    z-index: 1;
 }
 
 nav ul {
@@ -61,8 +62,6 @@ nav ul li a {
 }
 
 .section {
-    /* width: 100%; */
-    height: 100vh;
     border-top: 1px solid #1441b7;
     border: linear-gradient(
         to bottom,
@@ -71,16 +70,14 @@ nav ul li a {
         rgba(20, 65, 183, 0.45) 100%
     );
     scroll-snap-align: start;
-    /* padding-left: 18%;
-    padding-right: 18%; */
     display: flex;
     flex-direction: column;
 }
 
 .section .content {
-    /* background: white; */
     margin-left: 18%;
     margin-right: 18%;
+    z-index: 1;
 }
 
 .section .content .title {
@@ -104,12 +101,19 @@ nav ul li a {
 
 .section.s1 {
     border-top: none;
+    height: 100vh;
 }
 
 .section.s1 .content,
-.section.s2 .content {
+.section.s2 .content,
+.section.s3 .content {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
+    grid-gap: 2rem;
+}
+.section.s3 .content {
+    display: grid;
+    grid-template-rows: auto auto;
     grid-gap: 2rem;
 }
 
@@ -125,4 +129,79 @@ nav ul li a {
 .section.s2 .content .paragraph-title {
     color: white;
     font-size: 27px;
+}
+
+.three-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.three-elements div {
+    color: white;
+    text-align: left;
+}
+
+.three-elements .three-elements .paragraph-title {
+    color: white;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.three-elements .paragraph {
+    color: white;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: transparent;
+}
+
+.three-lines {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1rem;
+}
+
+.red-border {
+    border: 2px solid red;
+}
+
+.blue-border {
+    border: 2px solid #1441B7;
+}
+
+.white-border {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.two-lines {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+    padding: 26px;
+}
+
+.three-elements .two-lines .paragraph-title {
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: left;
 }
