@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "usual";
+    src: url("fonts/usual/Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "usual";
+    font-weight: bold;
+    src: url("fonts/usual/Bold.otf") format("opentype");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +15,7 @@ body {
 }
 
 body * {
-    font-family: usual, sans-serif;
+    font-family: "usual", sans-serif;
 }
 
 header {
@@ -62,13 +72,13 @@ nav ul li a {
 }
 
 .section {
-    border-top: 1px solid #1441b7;
+    /* border-top: 1px solid #1441b7;
     border: linear-gradient(
         to bottom,
         rgba(20, 65, 183, 0.45) 0%,
         rgba(20, 65, 183, 1) 50%,
         rgba(20, 65, 183, 0.45) 100%
-    );
+    ); */
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -183,7 +193,7 @@ nav ul li a {
 }
 
 .blue-border {
-    border: 2px solid #1441B7;
+    border: 2px solid #1441b7;
 }
 
 .white-border {
@@ -204,4 +214,48 @@ nav ul li a {
     line-height: 34px;
     letter-spacing: 0.01em;
     text-align: left;
+}
+
+/* STYLE FOR THE MENU */
+.element {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "a b"
+    "l l"
+    "c d"
+}
+
+#cosa-facciamo .side-menu .button{
+    grid-area: a;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#cosa-facciamo .side-menu .button.active{
+    color: #145CE8;
+
+}
+
+#cosa-facciamo .side-menu .menu-section{
+    grid-area: d;
+    color: white;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    display: none;
+}
+
+#cosa-facciamo hr{
+    grid-area: l;
+    border: 1px solid #1441B7;
+    width: 100%;
 }
