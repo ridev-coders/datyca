@@ -222,13 +222,20 @@ nav ul li a {
     column-gap: 1rem;
     row-gap: 1rem;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    "a b"
-    "l l"
-    "c d"
+    grid-template-areas:
+        "a b"
+        "l n"
+        "c d";
 }
 
-#cosa-facciamo .side-menu .button{
+.element.active {
+    grid-template-areas:
+        "a b"
+        "l l"
+        "c d";
+}
+
+#cosa-facciamo .side-menu .button {
     grid-area: a;
     color: white;
     font-weight: 400;
@@ -238,12 +245,11 @@ nav ul li a {
     cursor: pointer;
 }
 
-#cosa-facciamo .side-menu .button.active{
-    color: #145CE8;
-
+#cosa-facciamo .side-menu .button.active {
+    color: #145ce8;
 }
 
-#cosa-facciamo .side-menu .menu-section{
+#cosa-facciamo .side-menu .menu-section {
     grid-area: d;
     color: white;
     font-style: normal;
@@ -254,8 +260,13 @@ nav ul li a {
     display: none;
 }
 
-#cosa-facciamo hr{
+#cosa-facciamo hr.active {
     grid-area: l;
-    border: 1px solid #1441B7;
+}
+
+#cosa-facciamo hr {
+    grid-column-end: 1;
+    grid-area: l;
+    border: 1px solid #1441b7;
     width: 100%;
 }
