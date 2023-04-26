@@ -15,7 +15,8 @@ body {
 }
 
 body * {
-    font-family: "usual", sans-serif;
+    font-family: "usual", roboto, sans-serif;
+    /* font-family: roboto; */
 }
 
 header {
@@ -269,4 +270,75 @@ nav ul li a {
     grid-area: l;
     border: 1px solid #1441b7;
     width: 100%;
+}
+
+#settori .content .four-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 1rem;
+}
+
+#settori .content .settore {
+    width: 100%;
+}
+
+#settori .content .name {
+    text-align: center;
+    color: #f0f0f0;
+    width: 100%;
+    border-top: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+#settori .content .settore {
+    position: relative;
+    align-content: center;
+    margin: auto;
+}
+
+#settori .content .settore::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* This is the trick */
+}
+
+#settori .content .settore > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#settori .content .settore .square{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pink {
+    background: #f21763;
+}
+
+.blue {
+    background: #1441B7;
+}
+
+.violet {
+    background: #7F0CF2;
+}
+
+.yellow {
+    background: #f2b90c;
 }
