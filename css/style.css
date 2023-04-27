@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "usual";
-    src: url("fonts/usual/Regular.otf") format("opentype");
-}
-@font-face {
-    font-family: "usual";
-    font-weight: bold;
-    src: url("fonts/usual/Bold.otf") format("opentype");
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -93,7 +83,7 @@ nav ul li a {
 
 .section .content .title {
     color: #f21763;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 51.4336px;
     line-height: 61px;
 }
@@ -318,7 +308,7 @@ nav ul li a {
     width: 100%;
 }
 
-#settori .content .settore .square{
+#settori .content .settore .square {
     height: 90%;
     width: 90%;
     position: absolute;
@@ -332,11 +322,11 @@ nav ul li a {
 }
 
 .blue {
-    background: #1441B7;
+    background: #1441b7;
 }
 
 .violet {
-    background: #7F0CF2;
+    background: #7f0cf2;
 }
 
 .yellow {
