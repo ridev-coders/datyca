@@ -6,7 +6,18 @@ body {
 
 body * {
     font-family: "usual", roboto, sans-serif;
+    font-weight: 300;
     /* font-family: roboto; */
+}
+
+main{
+    display: grid;
+    grid-row-gap: 240px;
+}
+
+main section.s2{
+    display: grid;
+    grid-row-gap: 100pxx;
 }
 
 header {
@@ -47,6 +58,10 @@ nav ul li a {
     color: #ffffff;
 }
 
+section .content h2{
+    margin-block-start: 0px;
+}
+
 .logo {
     width: 33vw;
     height: auto;
@@ -63,13 +78,6 @@ nav ul li a {
 }
 
 .section {
-    /* border-top: 1px solid #1441b7;
-    border: linear-gradient(
-        to bottom,
-        rgba(20, 65, 183, 0.45) 0%,
-        rgba(20, 65, 183, 1) 50%,
-        rgba(20, 65, 183, 0.45) 100%
-    ); */
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -78,7 +86,7 @@ nav ul li a {
 .section .content {
     margin-left: 18%;
     margin-right: 18%;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .section .content .title {
@@ -89,12 +97,11 @@ nav ul li a {
 }
 
 .section .content .wrapper {
-    margin-block-start: 70px;
+    margin-block-start: 30px;
 }
 
 .section .content .wrapper .paragraph {
     color: white;
-    font-weight: 50;
     font-size: 21px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -105,12 +112,20 @@ nav ul li a {
     height: 100vh;
 }
 
+.section.s1 .content .wrapper, p{
+    margin-block-start: 0px;
+}
+
+.section.s2 .content .wrapper p{
+    margin-block-start: 30px;
+}
+
 .section.s1 .content,
 .section.s2 .content,
 .section.s3 .content {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
-    grid-gap: 2rem;
+    grid-gap: 50px;
 }
 .section.s3 .content {
     display: grid;
@@ -120,7 +135,7 @@ nav ul li a {
 
 .section.s1 .content {
     margin-top: auto;
-    margin-bottom: 5%;
+    margin-bottom: 110px;
 }
 
 .section.s2 .content {
@@ -130,6 +145,7 @@ nav ul li a {
 .section.s2 .content .paragraph-title {
     color: white;
     font-size: 27px;
+    font-weight: 400;
 }
 
 .three-elements {
@@ -140,6 +156,11 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
+    column-gap: 95px;
+}
+
+.section.s3 .three-elements{
+    column-gap: 32px;
 }
 
 .three-elements div {
@@ -158,7 +179,7 @@ nav ul li a {
 
 .three-elements .paragraph {
     color: white;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -176,7 +197,7 @@ nav ul li a {
 .three-lines {
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-gap: 1rem;
+    grid-gap: 40px;
 }
 
 .red-border {
@@ -244,7 +265,7 @@ nav ul li a {
     grid-area: d;
     color: white;
     font-style: normal;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 21px;
     line-height: 30px;
     letter-spacing: 0.01em;
