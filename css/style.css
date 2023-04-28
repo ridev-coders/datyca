@@ -338,6 +338,12 @@ section .content h2{
     transform: translate(-50%, -50%);
 }
 
+#settori .content .settore .square.arrow img{
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+}
+
 .pink {
     background: #f21763;
 }
