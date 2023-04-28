@@ -7,15 +7,16 @@ body {
 body * {
     font-family: "usual", roboto, sans-serif;
     font-weight: 300;
+    color: white;
     /* font-family: roboto; */
 }
 
-main{
+main {
     display: grid;
     grid-row-gap: 240px;
 }
 
-main section.s2{
+main section.s2 {
     display: grid;
     grid-row-gap: 100pxx;
 }
@@ -58,7 +59,7 @@ nav ul li a {
     color: #ffffff;
 }
 
-section .content h2{
+section .content h2 {
     margin-block-start: 0px;
 }
 
@@ -112,11 +113,12 @@ section .content h2{
     height: 100vh;
 }
 
-.section.s1 .content .wrapper, p{
+.section.s1 .content .wrapper,
+p {
     margin-block-start: 0px;
 }
 
-.section.s2 .content .wrapper p{
+.section.s2 .content .wrapper p {
     margin-block-start: 30px;
 }
 
@@ -159,7 +161,7 @@ section .content h2{
     column-gap: 95px;
 }
 
-.section.s3 .three-elements{
+.section.s3 .three-elements {
     column-gap: 32px;
 }
 
@@ -177,7 +179,7 @@ section .content h2{
     text-align: left;
 }
 
-.three-elements .paragraph {
+.paragraph {
     color: white;
     font-weight: 300;
     font-size: 20px;
@@ -338,7 +340,7 @@ section .content h2{
     transform: translate(-50%, -50%);
 }
 
-#settori .content .settore .square.arrow img{
+#settori .content .settore .square.arrow img {
     position: absolute;
     bottom: 18px;
     right: 18px;
@@ -358,4 +360,18 @@ section .content h2{
 
 .yellow {
     background: #f2b90c;
+}
+
+.section.s6 .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section.s6 .two-columns .locations.column ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.section.s6 .two-columns .locations.column ul h5 {
+    margin-bottom: 0px;
 }
