@@ -332,38 +332,49 @@
                         </div>
                         <div class="email-form column">
                             <form action="send_email.php" method="post">
-                                <div class="form-group">
-                                    <label for="object">Object:</label>
+                                <div class="form-group name">
+                                    <label for="object">Nome:</label>
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        placeholder="NOME"
+                                    />
+                                </div>
+
+                                <div class="form-group object">
+                                    <label for="object">Oggetto:</label>
                                     <input
                                         type="text"
                                         id="object"
                                         name="object"
-                                        placeholder="Enter Object"
+                                        placeholder="OGGETTO"
                                     />
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group email">
                                     <label for="email">Email:</label>
                                     <input
                                         type="email"
                                         id="email"
                                         name="email"
-                                        placeholder="Enter Email Address"
+                                        placeholder="EMAIL"
                                     />
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group body">
                                     <label for="message-body"
-                                        >Message Body:</label
+                                        >Corpo del messaggio</label
                                     >
                                     <textarea
                                         id="message-body"
                                         name="message-body"
-                                        placeholder="Write your message here"
+                                        placeholder="DIGITA IL TUO MESSAGGIO QUI..."
                                     ></textarea>
                                 </div>
+                                <div class="gap"></div>
 
-                                <button type="submit" value="Send">Send</button>
+                                <button type="submit" value="Send">INVIA</button>
                             </form>
                         </div>
                     </div>
