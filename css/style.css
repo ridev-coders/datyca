@@ -8,7 +8,6 @@ body * {
     font-family: "usual", roboto, sans-serif;
     font-weight: 300;
     color: white;
-    /* font-family: roboto; */
 }
 
 main {
@@ -31,18 +30,23 @@ header {
     z-index: 2;
 }
 
+nav {
+    margin: auto;
+}
+
 nav ul {
     display: flex;
+    gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: min-content;
 }
 
 nav ul li {
-    margin: 0 20px;
+    padding: 6px;
 }
 
 nav ul li a {
@@ -54,8 +58,12 @@ nav ul li a {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.05em;
-
     color: #ffffff;
+}
+
+nav ul li a.selected {
+    color: #1441b7;
+    border-bottom: 2px solid #1441b7;
 }
 
 section .content h2 {
