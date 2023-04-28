@@ -18,7 +18,6 @@ main {
 
 main section.s2 {
     display: grid;
-    grid-row-gap: 100pxx;
 }
 
 header {
@@ -78,6 +77,11 @@ section .content h2 {
     width: 70vw;
 }
 
+.bg-lines2 {
+    height: 100%;
+    float: right;
+}
+
 .section {
     scroll-snap-align: start;
     display: flex;
@@ -119,7 +123,6 @@ section .content h2 {
         rgba(20, 65, 183, 0.45) 100%
     );
 }
-
 
 .section.s1 .content .wrapper,
 p {
@@ -257,6 +260,10 @@ p {
         "c d";
 }
 
+.section.s4{
+    display: block;
+}
+
 #cosa-facciamo .side-menu .button {
     grid-area: a;
     color: white;
@@ -284,6 +291,11 @@ p {
 
 #cosa-facciamo hr.active {
     grid-area: l;
+}
+
+#cosa-facciamo .content {
+    position: absolute;
+    margin-right: 25%;
 }
 
 #cosa-facciamo hr {
