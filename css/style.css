@@ -28,7 +28,7 @@ header {
     background-color: transparent;
     display: flex; /* Added */
     justify-content: center; /* Added */
-    z-index: 1;
+    z-index: 2;
 }
 
 nav ul {
@@ -86,7 +86,7 @@ section .content h2{
 .section .content {
     margin-left: 18%;
     margin-right: 18%;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 .section .content .title {

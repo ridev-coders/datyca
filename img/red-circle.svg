@@ -1,0 +1,32 @@
+<svg width="86" height="64" viewBox="0 0 86 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_122_1857" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="65" height="64">
+<path d="M32.5351 62.8427C49.6124 62.8427 63.4564 48.9987 63.4564 31.9213C63.4564 14.844 49.6124 0.999983 32.5351 0.999983C15.4578 0.999983 1.61377 14.844 1.61377 31.9213C1.61377 48.9987 15.4578 62.8427 32.5351 62.8427Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</mask>
+<g mask="url(#mask0_122_1857)">
+<rect x="-17.3209" y="-11" width="86.6667" height="86.6667" fill="url(#pattern0)"/>
+</g>
+<mask id="mask1_122_1857" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="0" width="64" height="64">
+<path d="M43.0351 62.8427C60.1124 62.8427 73.9564 48.9987 73.9564 31.9213C73.9564 14.844 60.1124 0.999983 43.0351 0.999983C25.9578 0.999983 12.1138 14.844 12.1138 31.9213C12.1138 48.9987 25.9578 62.8427 43.0351 62.8427Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</mask>
+<g mask="url(#mask1_122_1857)">
+<rect x="-6.82086" y="-11" width="86.6667" height="86.6667" fill="url(#pattern1)"/>
+</g>
+<mask id="mask2_122_1857" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="21" y="0" width="65" height="64">
+<path d="M53.2851 62.8427C70.3624 62.8427 84.2064 48.9987 84.2064 31.9213C84.2064 14.844 70.3624 0.999983 53.2851 0.999983C36.2078 0.999983 22.3638 14.844 22.3638 31.9213C22.3638 48.9987 36.2078 62.8427 53.2851 62.8427Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</mask>
+<g mask="url(#mask2_122_1857)">
+<rect x="3.42914" y="-11" width="86.6667" height="86.6667" fill="url(#pattern2)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_122_1857" transform="scale(0.0153846)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_122_1857" transform="scale(0.0153846)"/>
+</pattern>
+<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_122_1857" transform="scale(0.0153846)"/>
+</pattern>
+<image id="image0_122_1857" width="65" height="65" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVR4nOXa2VYUQQwG4AYBZUYBUXkZF1BUBFEGFBfc5f1v8gIhnK4Bpqh0V1Wn1rnIC3wnf6WTmQY2viFsfEVY/0J1irD2meoTwoPLOkG4f0w1QRgfUX1EGF3WB4TVQ6r3CPcOqPYR7r5ra2WP6i3C8huq1whLu1SvEO68bGtxh2obYeEF1XOE5hnV06TVtAhU6yaIEwaCEEaHDMRecRANPPyOs91AtaYgjN1wVF03EMIZ3oaYdgMHUVcsNATufZgiUI0ns90wUgirB4ZYEMKKQlhWCFcQCmFRISykRNj8geZumJ9YEMIZg3Bqj3DVDaZHctoNJoidLCDaTthUCOzbUPekIISf6B4JDqKrG/KFaOCRQmAhHGJR6NtACL/wGmJoLDiIvGNxA8EnFpOekblfxMhs4PFvnO0GH4iyY2FAsIkE9xVZZiQI4Q9aQ+id0Dkyy5kUDMJ8RaKBJ3+R74au5aqemwODwE0KLRaDviTziUWLwHbDfMSCEP4xCKZuqDMW1widb0Pdy1UDW/+xF0LvBv1tsP6KdF2140C0CFs23eBzhivjbSCEc7SHqDMWGoLLI1nPcqUQbLuBgyj75mBAcO0Gn1j0PZLTbtDvkWG64QaCghg6MvUz3Dj/5eo2QoxIWP1WEe86rSFITopybg4dCJKTIu+bgwFhaCzKW64YBJdYlP+DrgVC6liEH5kdCI4jM/pyJTcp+hHmIBI9CDGXq3STQgjBZ1Lks1xZIISORfqR6YggNCkyuzlYIqSKRZz/QAkjCPz1R++ECCPTASHWchU/Eo4Ijh9QwUam7HXaD6GyM5wHgtTIzOfmMBBBeLlyPsXJLFeeCHXFIjBCGcvVAATJkZl2uYqA4PMVGfc6PRChjlgIIqQ+w/lDCCDkFgv35UoIIXQswo7MBAihliv/SAgiKIhslyt+UsgjpLg5DIyEMEKsWMguV4kQJM9wfcuVKRazkyIAwlCI+LEIjFDGdToQguTbEH5SJEYIEAnnt2E7JIJLN6Rdri4A4xqd8CNGg0MAAAAASUVORK5CYII="/>
+</defs>
+</svg>
