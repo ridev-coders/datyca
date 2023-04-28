@@ -88,7 +88,7 @@ section .content h2 {
     flex-direction: column;
 }
 
-.section .content {
+.content {
     margin-left: 18%;
     margin-right: 18%;
     z-index: 1;
@@ -471,10 +471,31 @@ textarea {
     color: white;
 }
 
-.email-form form input::placeholder, textarea::placeholder, button{
+.email-form form input::placeholder,
+textarea::placeholder,
+button {
     color: #145ce8;
 }
 
-.email-form form input:focus, textarea:focus{
+.email-form form input:focus,
+textarea:focus {
     outline: none;
+}
+
+footer {
+    margin-bottom: 50px;
+}
+footer p {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer * {
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0.08em;
 }
