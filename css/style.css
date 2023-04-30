@@ -32,7 +32,7 @@ header {
     z-index: 2;
 }
 
-header:hover{
+header:hover {
     opacity: 1;
 }
 
@@ -41,14 +41,13 @@ header:hover{
     transition: opacity 0.5s ease-in-out;
 }
 
-.visible{
+.visible {
     opacity: 1;
 }
 
 nav {
     margin: auto;
 }
-
 
 nav ul {
     display: flex;
@@ -119,10 +118,13 @@ section .content h2 {
 }
 
 .section .content .title {
-    color: #f21763;
     font-weight: 300;
     font-size: 51.4336px;
     line-height: 61px;
+}
+
+.page.hp .section .content .title{
+    color: #f21763;
 }
 
 .section .content .wrapper {
@@ -136,7 +138,7 @@ section .content h2 {
     letter-spacing: 0.01em;
 }
 
-.section.s1 {
+.page.hp .section.s1 {
     border-top: none;
     height: 100vh;
     border-bottom: 1px solid #1441b7;
@@ -164,7 +166,8 @@ p {
     grid-template-columns: 1.2fr 2fr;
     grid-gap: 50px;
 }
-.section.s3 .content {
+
+.page.hp .section.s3 .content {
     display: grid;
     grid-template-rows: auto auto;
     grid-gap: 2rem;
@@ -284,7 +287,7 @@ p {
         "c d";
 }
 
-.section.s4 {
+.page.hp .section.s4 {
     display: block;
 }
 
@@ -390,20 +393,36 @@ p {
     right: 18px;
 }
 
-.pink {
+.pink-bg {
     background: #f21763;
 }
 
-.blue {
+.pink {
+    color: #f21763;
+}
+
+.blue-bg {
     background: #1441b7;
 }
 
-.violet {
+.blue {
+    color: #1441b7;
+}
+
+.violet-bg {
     background: #7f0cf2;
 }
 
-.yellow {
+.violet {
+    color: #7f0cf2;
+}
+
+.yellow-bg {
     background: #f2b90c;
+}
+
+.yellow {
+    color: #f2b90c;
 }
 
 .section.s6 .two-columns {
@@ -522,4 +541,41 @@ footer * {
     font-size: 15px;
     line-height: 29px;
     letter-spacing: 0.08em;
+}
+
+/* PAGE SECTORS */
+.page.sectors .section {
+    border-top: none;
+    border-bottom: 1px solid #1441b7;
+    border: linear-gradient(
+        to bottom,
+        rgba(20, 65, 183, 0.45) 0%,
+        rgba(20, 65, 183, 1) 50%,
+        rgba(20, 65, 183, 0.45) 100%
+    );
+}
+.page.sectors .content {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    grid-gap: 50px;
+    margin-bottom: 110px;
+}
+
+.page.sectors .section.s1 {
+    margin-top: 200px;
+}
+
+.page.sectors .section .content .wrapper .paragraph {
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    margin-top: 25px;
+}
+
+main.page.sectors {
+    row-gap: 0px;
+}
+
+.page.sectors section:last-of-type{
+    border-bottom: none;
 }
