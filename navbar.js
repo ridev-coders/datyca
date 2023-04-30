@@ -7,17 +7,31 @@ window.onload = function() {
 
         // change style for anchors links
         const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const docHeight = document.documentElement.scrollHeight;
         anchors.forEach(anchor => {
         const target = document.querySelector(anchor.hash);
-        if (target.offsetTop <= scrollPosition && target.offsetTop + target.offsetHeight > scrollPosition) {
+          // Determine if the user has reached the bottom of the page
+        if (scrollPosition + windowHeight >= docHeight) {
             navLinks.forEach(link => {
                 // reset all links color first
                 link.style.color = '';
                 link.classList.remove('selected')
             });
-
-            // set the color to blue for the active link
-            anchor.classList.add('selected')
+            // Select the last anchor element and add the "selected" class
+            const lastAnchor = anchors[anchors.length - 1];
+            lastAnchor.classList.add('selected');
+        } else {
+            if (target.offsetTop <= scrollPosition +2 && target.offsetTop + target.offsetHeight > scrollPosition) {
+                navLinks.forEach(link => {
+                    // reset all links color first
+                    link.style.color = '';
+                    link.classList.remove('selected')
+                });
+    
+                // set the color to blue for the active link
+                anchor.classList.add('selected')
+            }
         }
         });
 
