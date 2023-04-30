@@ -26,10 +26,21 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: center;
     z-index: 2;
+    min-width: 1200px;
+    background-clip:padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+header .wrapper{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
 }
 
 header:hover {
@@ -85,13 +96,54 @@ section .content h2 {
     margin-block-start: 0px;
 }
 
-.logo {
+.logo-space {
     width: 33vw;
     height: auto;
     padding: 0px;
     margin-left: 18%;
     margin-top: 10%;
 }
+
+#logo-container {
+    position: absolute;
+    animation: logo-animation 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function:cubic-bezier(0.23, 1, 0.320, 1);
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+#logo-container img.logo{
+    height: 100%;
+}
+
+@keyframes logo-animation {
+
+    0% {
+        left: 18%;
+        top: 20vh;
+        height: 100%;
+        height: 300px;
+    }
+
+    50% {
+        left: 18%;
+        top: 20vh;
+        height: 100%;
+        height: 300px;
+    }
+    
+    100% {
+        left: 0px;
+        top: 0px;
+        height: 100%;
+    }
+    
+}
+
 
 .bg-lines {
     position: absolute;
@@ -123,7 +175,7 @@ section .content h2 {
     line-height: 61px;
 }
 
-.page.hp .section .content .title{
+.page.hp .section .content .title {
     color: #f21763;
 }
 
@@ -565,7 +617,7 @@ footer * {
     margin-top: 200px;
 }
 
-.page.sectors .section .content{
+.page.sectors .section .content {
     margin-top: 110px;
 }
 
@@ -580,10 +632,10 @@ main.page.sectors {
     row-gap: 0px;
 }
 
-.page.sectors section:last-of-type{
+.page.sectors section:last-of-type {
     border-bottom: none;
 }
 
-.page.sectors footer{
+.page.sectors footer {
     margin-top: 200px;
 }
