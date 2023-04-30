@@ -104,7 +104,7 @@ section .content h2 {
     margin-top: 10%;
 }
 
-#logo-container {
+.page.hp #logo-container {
     position: absolute;
     animation: logo-animation 2s 1;
     animation-fill-mode: forwards;
@@ -113,6 +113,16 @@ section .content h2 {
     margin-left: 15px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+#logo-container {
+    position: absolute;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
 }
 
 
