@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link
@@ -12,6 +13,7 @@
         <script src="menu.js"></script>
         <script src="navbar.js"></script>
         <script src="sectors.js"></script>
+        <script src="mobile-menu.js"></script>
     </head>
 
     <body class="page hp blue-background">
@@ -25,22 +27,30 @@
                     />
                 </div>
                 <nav class="navbar">
-                    <ul>
-                        <li><a href="#chi-siamo">CHI SIAMO</a></li>
-                        <li><a href="#i-nostri-valori">I NOSTRI VALORI</a></li>
-                        <li><a href="#perche-noi">PERCHÉ NOI</a></li>
-                        <li><a href="#cosa-facciamo">COSA FACCIAMO</a></li>
-                        <li><a href="#settori">SETTORI</a></li>
-                        <li><a href="#contatti">CONTATTI</a></li>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="hide">
+                        <li><a href="#chi-siamo">Chi siamo</a></li>
+                        <li><a href="#i-nostri-valori">I nostri valori</a></li>
+                        <li><a href="#perche-noi">Perché noi</a></li>
+                        <li><a href="#cosa-facciamo">Cosa facciamo</a></li>
+                        <li><a href="#settori">Settori</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main >
+        <main>
             <section id="chi-siamo" class="section s1">
                 <div class="slogan">
-                    <h4>Ti aituamo a disegnare il tuo <br> <span class="pink">futuro</span></h4>
+                    <h4>
+                        Ti aituamo a disegnare il tuo <br />
+                        <span class="pink">futuro</span>
+                    </h4>
                 </div>
                 <img
                     class="bg-lines"
