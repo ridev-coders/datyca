@@ -57,6 +57,10 @@ body * {
 }
 
 @media only screen and (min-width: 481px) {
+    .mobile{
+        display: none;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -722,6 +726,9 @@ body * {
         
     } */
 
+    .desktop {
+        display: none;
+    }
     body,
     main {
         margin: 0;
@@ -781,6 +788,7 @@ body * {
         gap: 28px;
         display: flex;
         flex-direction: column;
+        z-index: 1;
     }
 
     header .wrapper ul li {
@@ -812,6 +820,14 @@ body * {
     .show {
         opacity: 1;
         transition: 1s;
+    }
+
+    .bg-lines.mobile{
+        width: calc(100vw + 70px);
+        overflow: hidden;
+        position: absolute;
+        top: 176px;
+        left: -70px;
     }
 
     .section.s1,
