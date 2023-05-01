@@ -638,7 +638,7 @@ footer * {
     margin-top: 25px;
 }
 
-main.page.sectors {
+.page.sectors {
     row-gap: 0px;
 }
 
