@@ -4,6 +4,7 @@ window.onload = function() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('ul');
     const background = document.querySelector('.bg-lines');
+    const slogan = document.querySelector('.slogan .mobile')
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('hide');
@@ -11,5 +12,7 @@ window.onload = function() {
         hamburger.classList.toggle('close')
         background.classList.toggle('hide')
         background.classList.toggle('show')
+        slogan.classList.toggle('hide')
+        slogan.classList.toggle('show')
     });
 }

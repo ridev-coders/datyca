@@ -57,7 +57,7 @@ body * {
 }
 
 @media only screen and (min-width: 481px) {
-    .mobile{
+    .mobile {
         display: none;
     }
 
@@ -769,7 +769,6 @@ body * {
         position: absolute;
         margin-top: 47px;
         margin-right: 25px;
-
     }
 
     .hamburger span {
@@ -816,21 +815,35 @@ body * {
         opacity: 0;
         transition: 1s;
     }
-    
+
     .show {
         opacity: 1;
         transition: 1s;
     }
 
-    .bg-lines.mobile{
+    .bg-lines.mobile {
         width: calc(100vw + 70px);
         overflow: hidden;
         position: absolute;
-        top: 176px;
+        top: 180px;
         left: -70px;
     }
 
-    .section.s1,
+    .slogan {
+        top: 176px;
+        font-weight: 350;
+        font-size: 40px;
+        line-height: 48px;
+        width: 270px;
+        margin-top: 188px;
+        height: 100vh;
+    }
+
+    .section{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    /* .section.s1, */
     .section.s2,
     .section.s3,
     .section.s4,
