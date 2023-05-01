@@ -1,5 +1,5 @@
 
-window.onload = function() {
+window.addEventListener('load', function() {
     // mobile menu
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('ul');
@@ -15,4 +15,4 @@ window.onload = function() {
         slogan.classList.toggle('hide')
         slogan.classList.toggle('show')
     });
-}
+});
