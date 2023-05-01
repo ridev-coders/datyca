@@ -744,11 +744,13 @@ body * {
 
     .logo {
         width: 50%;
+        z-index: 1;
     }
 
     #logo-container {
         margin-top: 20px;
         margin-left: 15px;
+        z-index: 1;
     }
 
     header,
@@ -756,6 +758,7 @@ body * {
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 1;
     }
 
     .hamburger {
@@ -827,6 +830,7 @@ body * {
         position: absolute;
         top: 180px;
         left: -70px;
+        z-index: 0;
     }
 
     .slogan {
@@ -839,12 +843,48 @@ body * {
         height: 100vh;
     }
 
-    .section{
+    .section {
         padding-left: 26px;
         padding-right: 26px;
     }
+
+    .section .title {
+        font-size: 32px;
+        line-height: 38px;
+        color: #f21763;
+    }
+
+    .section .paragraph {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+    }
+
+    .section {
+        border-bottom: 1px solid #1441b7;
+        padding-bottom: 48px;
+        padding-top: 30px;
+    }
+
+    .section .paragraph-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        padding-bottom: 15px;
+    }
+
+    .section .three-elements .three-lines img{
+        margin-top: 70px;
+    }
+
+    .section .three-elements .paragraph-title{
+        margin-top: 20px;
+        margin-bottom: 16px
+    }
     /* .section.s1, */
-    .section.s2,
+    /* .section.s2, */
     .section.s3,
     .section.s4,
     .section.s5,
