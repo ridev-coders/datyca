@@ -18,7 +18,11 @@ main {
     grid-row-gap: 240px;
 }
 
-main section.s2{
+main section {
+    min-width: 1450px;
+}
+
+main section.s2 {
     display: grid;
 }
 
@@ -395,7 +399,7 @@ p {
         "c d";
 }
 
-.page.hp .section.s4{
+.page.hp .section.s4 {
     display: block;
 }
 
