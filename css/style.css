@@ -176,9 +176,12 @@ body * {
         margin-top: 0px;
     }
 
+    .page.hp #logo-container.animate {
+        animation: logo-animation 2s 1;
+    }
+
     .page.hp #logo-container {
         position: absolute;
-        animation: logo-animation 2s 1;
         animation-fill-mode: forwards;
         animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
         height: 60px;
@@ -875,13 +878,13 @@ body * {
         padding-bottom: 15px;
     }
 
-    .section .three-elements .three-lines img{
+    .section .three-elements .three-lines img {
         margin-top: 70px;
     }
 
-    .section .three-elements .paragraph-title{
+    .section .three-elements .paragraph-title {
         margin-top: 20px;
-        margin-bottom: 16px
+        margin-bottom: 16px;
     }
     /* .section.s1, */
     /* .section.s2, */
