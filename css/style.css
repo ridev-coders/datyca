@@ -715,20 +715,6 @@ body * {
 }
 
 @media only screen and (max-width: 480px) {
-    /* styles for mobile devices */
-    /* body.page.hp main section.section.s1  {
-        height: inherit;
-    }
-
-
-    body.page.hp main section.section .content {
-        display: block;
-    }
-    body.page.hp main section.section .slogan {
-        display: block;
-        
-    } */
-
     .desktop {
         display: none;
     }
@@ -736,11 +722,11 @@ body * {
     main {
         margin: 0;
         padding: 0;
-        background: #000;
+        /* background: #000; */
     }
 
     .blue-background {
-        background: #000;
+        /* background: #000; */
     }
 
     /* Mobile menu styles */
