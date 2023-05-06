@@ -6,6 +6,10 @@ html {
     width: fit-content;
 }
 
+body{
+    width: 100vw;
+}
+
 body * {
     font-family: "usual", roboto, sans-serif;
     font-weight: 300;
@@ -72,7 +76,8 @@ body * {
     }
 
     main section {
-        min-width: 1450px;
+        min-width: 1110px;
+        margin: auto;
     }
 
     main section.s2 {
@@ -281,9 +286,13 @@ body * {
     }
 
     .content {
-        margin-left: 18%;
-        margin-right: 18%;
+        margin-left: auto;
+        margin-right: auto;
         z-index: 1;
+    }
+
+    .section .content{
+        width: 1020px;
     }
 
     .section .content .title {
@@ -297,7 +306,7 @@ body * {
     }
 
     .section .content .wrapper {
-        margin-block-start: 30px;
+        /* margin-block-start: 30px; */
     }
 
     .section .content .wrapper .paragraph {
@@ -310,22 +319,22 @@ body * {
     .page.hp .section.s1 {
         border-top: none;
         height: 100vh;
-        border-bottom: 1px solid #1441b7;
+        /* border-bottom: 1px solid #1441b7;
         border: linear-gradient(
             to bottom,
             rgba(20, 65, 183, 0.45) 0%,
             rgba(20, 65, 183, 1) 50%,
             rgba(20, 65, 183, 0.45) 100%
-        );
+        ); */
     }
 
-    .section.s1 .content .wrapper,
-    p {
+    #chi-siamo .content .wrapper,
+    #i-nostri-valori .wrapper{
+        margin-block-start: 5px;
+    }
+
+    #chi-siamo p{
         margin-block-start: 0px;
-    }
-
-    .section.s2 .content .wrapper p {
-        margin-block-start: 30px;
     }
 
     .section.s1 .content,
