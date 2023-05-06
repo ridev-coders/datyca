@@ -163,17 +163,14 @@ body * {
         margin-block-start: 0px;
     }
 
-    .slogan {
-        width: 550px;
+    .section .content.slogan {
         height: auto;
         padding: 0px;
-        margin-left: 18%;
         margin-top: 250px;
         font-weight: 350;
         font-size: 80px;
         line-height: 95px;
         animation: slogan-animation 2s 1;
-        z-index: 1;
         /* animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1); */
     }
 
