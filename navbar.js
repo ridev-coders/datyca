@@ -5,6 +5,7 @@ window.onload = function() {
     const isHomepage = document.querySelector('.page.hp');
     const isMobile = window.innerWidth <= 480;
     addClickEventListeners()
+    smoothScroll()
 
     function onScroll() {
 
@@ -84,5 +85,24 @@ window.onload = function() {
             document.querySelector('header').classList.remove('slide-up');
             document.querySelector('header').classList.add('slide-down');
         }
+    }
+
+    // add smoothness in scrolling to anchors
+    function smoothScroll(){
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+            
+                const target = document.querySelector(link.getAttribute('href'));
+                const offsetTop = target.offsetTop;
+                const scrollPos = window.scrollY;
+                            
+                window.scrollTo({
+                    top: offsetTop,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
     }
 };

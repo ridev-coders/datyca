@@ -60,6 +60,10 @@ body * {
     color: #f2b90c;
 }
 
+.scroll-link {
+    scroll-behavior: smooth;
+}
+
 /* desktop */
 @media only screen and (min-width: 481px) {
     .mobile {
@@ -161,7 +165,6 @@ body * {
         /* color: #145ce8; */
         border-bottom: 2px solid #145ce8;
     }
-
 
     section .content h2 {
         margin-block-start: 0px;
@@ -357,7 +360,7 @@ body * {
     }
 
     /* when click on anchor title is visible: */
-    .section .content{
+    .section .content {
         padding-top: 80px;
     }
 
