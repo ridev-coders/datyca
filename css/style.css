@@ -567,6 +567,11 @@ body * {
 
     #contatti .two-columns .locations.column ul h5 {
         margin-bottom: 0px;
+        font-weight: 350;
+    }
+
+    #contatti .two-columns .locations.column ul p {
+        margin-block-start: 0px;
     }
 
     .form-group label {
@@ -676,13 +681,13 @@ body * {
     /* PAGE SECTORS */
     .page.sectors .section {
         border-top: none;
-        border-bottom: 1px solid #1441b7;
-        border: linear-gradient(
+        /* border-bottom: 1px solid #1441b7; */
+        /* border: linear-gradient(
             to bottom,
             rgba(20, 65, 183, 0.45) 0%,
             rgba(20, 65, 183, 1) 50%,
             rgba(20, 65, 183, 0.45) 100%
-        );
+        ); */
     }
     .page.sectors .section .content {
         display: grid;
