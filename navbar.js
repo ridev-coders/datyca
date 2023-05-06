@@ -1,6 +1,6 @@
 window.onload = function() {
     const anchors = document.querySelectorAll('a[href^="#"]');
-    const navLinks = [...document.querySelectorAll('nav ul li a')];
+    const navLinks = [...document.querySelectorAll('nav ul li')]; // select the li elements instead
     const navbar = document.querySelector('header');
     const isHomepage = document.querySelector('.page.hp');
     const isMobile = window.innerWidth <= 480;
@@ -16,10 +16,6 @@ window.onload = function() {
     }
 
     window.addEventListener('scroll', onScroll);
-    
-
-
-
 
     // change style for anchors links
     function linksStyle() {
@@ -32,23 +28,20 @@ window.onload = function() {
             // Determine if the user has reached the bottom of the page
             if (scrollPosition + windowHeight >= docHeight) {
                 navLinks.forEach(link => {
-                    // reset all links color first
-                    link.style.color = '';
                     link.classList.remove('selected')
                 });
-                // Select the last anchor element and add the "selected" class
+                // Select the last anchor element and add the "selected" class to its parent li element
                 const lastAnchor = anchors[anchors.length - 1];
-                lastAnchor.classList.add('selected');
+                const lastLink = lastAnchor.parentNode;
+                lastLink.classList.add('selected');
             } else {
                 if (target.offsetTop <= scrollPosition +2 && target.offsetTop + target.offsetHeight > scrollPosition) {
                     navLinks.forEach(link => {
-                        // reset all links color first
-                        link.style.color = '';
                         link.classList.remove('selected')
                     });
         
-                    // set the color to blue for the active link
-                    anchor.classList.add('selected')
+                    // set the "selected" class to the parent li element of the active anchor link
+                    anchor.parentNode.classList.add('selected')
                 }
             }
         });
@@ -69,10 +62,14 @@ window.onload = function() {
         }
     }
 
-    // add click event listener to navbar links
+    // add click event listener to navbar links' parent li elements instead
     function addClickEventListeners() {
-        document.querySelectorAll('.navbar a').forEach(link => {
+        navLinks.forEach(link => { // select the li elements instead
             link.addEventListener('click', () => {
+                navLinks.forEach(link => {
+                    link.classList.remove('selected')
+                });
+                link.classList.add('selected'); // toggle the "selected" class on the clicked li element
                 if (isMobile) {
                     document.querySelector('header').classList.remove('slide-down');
                     document.querySelector('header').classList.add('slide-up');
@@ -88,6 +85,4 @@ window.onload = function() {
             document.querySelector('header').classList.add('slide-down');
         }
     }
-
 };
-

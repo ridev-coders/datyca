@@ -152,10 +152,16 @@ body * {
         color: #ffffff;
     }
 
-    nav ul li a.selected {
+    nav ul li.selected a {
         color: #145ce8;
+        /* border-bottom: 2px solid #145ce8; */
+    }
+
+    nav ul li.selected {
+        /* color: #145ce8; */
         border-bottom: 2px solid #145ce8;
     }
+
 
     section .content h2 {
         margin-block-start: 0px;
