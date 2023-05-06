@@ -6,7 +6,7 @@ html {
     width: fit-content;
 }
 
-body{
+body {
     width: 100vw;
 }
 
@@ -292,7 +292,7 @@ body * {
         z-index: 1;
     }
 
-    .section .content{
+    .section .content {
         width: 1020px;
     }
 
@@ -329,16 +329,16 @@ body * {
         ); */
     }
 
-    #slogan .content{
+    #slogan .content {
         grid-template-columns: 5.2fr 2fr;
     }
 
     #chi-siamo .content .wrapper,
-    #i-nostri-valori .wrapper{
+    #i-nostri-valori .wrapper {
         margin-block-start: 5px;
     }
 
-    #chi-siamo p{
+    #chi-siamo p {
         margin-block-start: 0px;
     }
 
@@ -351,19 +351,15 @@ body * {
         grid-gap: 50px;
     }
 
+    /* when click on anchor title is visible: */
+    .section .content{
+        padding-top: 80px;
+    }
+
     .page.hp .section.s4 .content {
         display: grid;
         grid-template-rows: auto auto;
         grid-gap: 2rem;
-    }
-
-    /* .section.s1 .content {
-        margin-top: auto;
-        margin-bottom: 110px;
-    } */
-
-    .section .content {
-        margin-top: 80px;
     }
 
     .section.s3 .content .paragraph-title {
@@ -894,9 +890,9 @@ body * {
 
     .slide-up {
         transform: translateY(-100%);
-      }
-      
-      .slide-down {
+    }
+
+    .slide-down {
         transform: translateY(0);
     }
 
