@@ -275,7 +275,8 @@ body * {
 
     .bg-lines2 {
         height: 100%;
-        float: right;
+        right: 0px;
+        position: absolute;
     }
 
     .section {
@@ -484,11 +485,6 @@ body * {
 
     #cosa-facciamo hr.active {
         grid-area: l;
-    }
-
-    #cosa-facciamo .content {
-        position: absolute;
-        margin-right: 25%;
     }
 
     #cosa-facciamo hr {
