@@ -60,6 +60,7 @@ body * {
     color: #f2b90c;
 }
 
+/* desktop */
 @media only screen and (min-width: 481px) {
     .mobile {
         display: none;
@@ -73,6 +74,7 @@ body * {
     main {
         display: grid;
         grid-row-gap: 240px;
+        min-width: 920px;
     }
 
     main section {
@@ -271,7 +273,7 @@ body * {
         position: absolute;
         right: 0px;
         top: 0px;
-        width: 70vw;
+        /* width: 70vw; */
     }
 
     .bg-lines2 {
@@ -328,6 +330,10 @@ body * {
         ); */
     }
 
+    #slogan .content{
+        grid-template-columns: 5.2fr 2fr;
+    }
+
     #chi-siamo .content .wrapper,
     #i-nostri-valori .wrapper{
         margin-block-start: 5px;
@@ -352,10 +358,10 @@ body * {
         grid-gap: 2rem;
     }
 
-    .section.s1 .content {
+    /* .section.s1 .content {
         margin-top: auto;
         margin-bottom: 110px;
-    }
+    } */
 
     .section.s3 .content {
         margin-top: 5%;
