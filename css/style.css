@@ -274,7 +274,7 @@ body * {
     }
 
     .bg-lines2 {
-        height: 100%;
+        height: 77%;
         right: 0px;
         position: absolute;
     }
@@ -421,7 +421,7 @@ body * {
 
     .two-lines {
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: 95px auto;
         grid-gap: 1rem;
         padding: 26px;
     }
