@@ -288,9 +288,10 @@ body * {
     }
 
     .bg-lines2 {
-        height: 77%;
+        height: 1010px;
         right: 0px;
         position: absolute;
+        opacity: 0.7;
     }
 
     .section {
