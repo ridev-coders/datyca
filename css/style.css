@@ -143,6 +143,11 @@ body * {
         padding: 6px;
     }
 
+
+    nav ul li:hover a {
+        color: #f21763;
+    }
+
     nav ul li a {
         display: block;
         text-decoration: none;
