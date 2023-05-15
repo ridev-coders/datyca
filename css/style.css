@@ -541,33 +541,14 @@ body * {
         margin: auto;
     }
 
-    #settori .content .settore::before {
-        content: "";
-        display: block;
-        padding-top: 100%; /* This is the trick */
-    }
-
-    #settori .content .settore > * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }
-
     #settori .content .settore .square {
-        height: 90%;
-        width: 90%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
     }
 
     #settori .content .settore .square.arrow img {
-        position: absolute;
-        bottom: 18px;
-        right: 18px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
     }
 
     #contatti .two-columns {
