@@ -584,7 +584,12 @@ body * {
         font-size: 21px;
         line-height: 30px;
         letter-spacing: 0.01em;
-        display: none;
+        height: 0px;
+        overflow-y: hidden;
+    }
+
+    #cosa-facciamo .side-menu .element.active .menu-section{
+        height: auto;
     }
 
     #cosa-facciamo hr.active {
