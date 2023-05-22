@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     targetElements.push(document.querySelector('div.slogan span.future'));
     targetElements.push(document.querySelector('.bg-lines.desktop'));
     targetElements.push(document.querySelector('.bg-lines.mobile'));
+    const bigLogoContainer = document.querySelector('#big-logo-container');
     
     if (window.pageYOffset < 160 && !window.location.hash) {
         targetElements.forEach(function(targetElement) {
@@ -17,11 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         targetElements.forEach(function(targetElement) {
             targetElement.classList.remove('animate');
         });
-    }
-
-    // if user landed in page from anchor, remove the big logo:
-    const bigLogoContainer = document.querySelector('#big-logo-container');
-    if (window.location.hash){
         bigLogoContainer.style.display = 'none';
     }
 
