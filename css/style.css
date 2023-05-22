@@ -235,8 +235,9 @@ body * {
         font-weight: 350;
         font-size: 80px;
         line-height: 95px;
+    }
+    .section .content.slogan.animate {
         animation: slogan-animation 4s 1;
-        /* animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1); */
     }
 
     .section .content.big-logo {
@@ -245,7 +246,7 @@ body * {
         margin-top: 240px;
     }
 
-    div.slogan span.future {
+    div.slogan span.future.animate {
         animation: future-animation 5s 1;
     }
 
@@ -369,6 +370,9 @@ body * {
         position: absolute;
         right: 0px;
         top: 0px;
+    }
+    
+    .bg-lines.animate{
         animation: bg-animation 1.5s 1;
     }
 
