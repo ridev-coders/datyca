@@ -845,7 +845,7 @@ body * {
 
     #logo-container {
         margin-top: 20px;
-        margin-left: 15px;
+        margin-left: 28px;
         z-index: 1;
     }
 
@@ -857,6 +857,15 @@ body * {
         z-index: 1;
     }
 
+    .navbar .wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .navbar ul{
+        padding-inline-start: 0px;
+    }
+
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -865,9 +874,9 @@ body * {
         height: 21px;
         cursor: pointer;
         right: 0px;
-        position: absolute;
+        /* position: absolute; */
         margin-top: 47px;
-        margin-right: 25px;
+        margin-right: 40px;
     }
 
     .hamburger span {
@@ -958,9 +967,12 @@ body * {
     }
 
     .section {
-        border-bottom: 1px solid #1441b7;
         padding-bottom: 48px;
         padding-top: 30px;
+    }
+
+    .section.s2{
+        border-bottom: 1px solid #1441b7;
     }
 
     .section .paragraph-title {
@@ -978,6 +990,17 @@ body * {
     .section .three-elements .paragraph-title {
         margin-top: 20px;
         margin-bottom: 16px;
+    }
+
+
+    .section .three-elements .two-lines {
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-bottom: 50px;
+    }
+
+    .section .three-elements .two-lines:nth-child(1), .two-lines:nth-child(2) {
+        border-bottom: none;
     }
 
     header {
@@ -1002,8 +1025,8 @@ body * {
 
     /* .section.s1, */
     /* .section.s2, */
-    .section.s3,
-    .section.s4,
+    /* .section.s3, */
+    /* .section.s4, */
     .section.s5,
     .section.s6,
     footer {
