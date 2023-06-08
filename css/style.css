@@ -640,7 +640,7 @@ body * {
     }
 
     #settori .content .settore .square.arrow,
-    a {
+    #settori .content .settore a {
         position: absolute;
         top: 0;
         left: 0;
