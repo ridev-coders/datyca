@@ -639,7 +639,8 @@ body * {
         position: relative;
     }
 
-    #settori .content .settore .square.arrow, a {
+    #settori .content .settore .square.arrow,
+    a {
         position: absolute;
         top: 0;
         left: 0;
@@ -916,6 +917,7 @@ body * {
         /* position: relative; */
         transition-property: opacity, height;
         transition-duration: 1s, 4s;
+        transition-timing-function: ease-in-out;
         box-sizing: content-box;
     }
 
@@ -955,6 +957,20 @@ body * {
     .show {
         opacity: 1;
         transition: opacity 1s ease-in-out;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .zero-size {
+        height: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .display-flex {
+        display: flex;
     }
 
     .bg-lines.mobile {
