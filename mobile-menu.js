@@ -10,6 +10,7 @@ window.addEventListener('load', function() {
     if (window.matchMedia("(max-width: 480px)").matches) {
         navLinkUl.classList.add('zero-size');
         navLinkUl.classList.add('hide');
+        navLinkUl.classList.add('closed');
     }  
     // Toggle menu and classes when hamburger is clicked
     hamburger.addEventListener('click', () => {
@@ -35,13 +36,17 @@ window.addEventListener('load', function() {
         // navLinkUl.classList.toggle('hide');
         // navLinkUl.classList.toggle('show');
 
-        if (navLinkUl.classList.contains('zero-size')) {
+        if (navLinkUl.classList.contains('closed')) {
+            navLinkUl.classList.toggle('opened');
+            navLinkUl.classList.toggle('closed');
             navLinkUl.classList.remove('zero-size');
             navLinkUl.classList.toggle('hide');
             // navLinkUl.classList.toggle('show');
         } else {
             // Otherwise add display-none class after 2 seconds
             navLinkUl.classList.toggle('hide');
+            navLinkUl.classList.toggle('closed');
+            navLinkUl.classList.toggle('opened');
             // navLinkUl.classList.toggle('show');
             setTimeout(() => {
                 navLinkUl.classList.add('zero-size');
