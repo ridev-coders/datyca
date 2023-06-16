@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Store the height of each section in a data attribute
     Array.from(sections).forEach(section => {
         section.dataset.height = section.scrollHeight;
+        section.dataset.paddingBottom = 25;
     });
 
     document.querySelectorAll('.side-menu .button').forEach(button => {
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Loop through all sections and set their height to 0
             Array.from(sections).forEach(section => {
                 section.style.height = 0;
+                section.style.paddingBottom = 0;
             });
 
             // Remove the "active" class from all buttons and elements
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Set the height of the target section to its stored height
             targetSection.style.display = 'block';
             targetSection.style.height = targetSection.dataset.height + 'px';
+            targetSection.style.paddingBottom = targetSection.dataset.paddingBottom + 'px';
 
             // Add the "active" class to the current button and its parent element
             button.classList.add('active')
