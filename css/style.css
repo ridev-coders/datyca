@@ -1145,6 +1145,105 @@ body * {
         width: 100%;
     }
 
+    #contatti .locations.column ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    #contatti .locations.column ul h5 {
+        margin-bottom: 0px;
+        font-weight: 350;
+    }
+
+    #contatti .locations.column ul p {
+        margin-block-start: 0px;
+    }
+
+
+    .form-group label {
+        display: none;
+    }
+
+    .email-form{
+        margin-top: 45px;
+    }
+
+    .email-form form {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 50px 200px 50px;
+        grid-template-areas:
+            "name"
+            "email"
+            "object"
+            "body"
+            "button";
+    }
+
+    .email-form form .form-group.name {
+        grid-area: name;
+    }
+
+    .email-form form .form-group.email {
+        grid-area: email;
+    }
+
+    .email-form form .form-group.body {
+        grid-area: body;
+    }
+
+    .email-form form button {
+        grid-area: button;
+    }
+
+    .email-form form input,
+    textarea,
+    button {
+        background-color: transparent;
+        border-image: none;
+        border: 2px solid #1441b7;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .email-form form .form-group input,
+    textarea {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 17px;
+    }
+
+    .email-form form .form-group input#email {
+        border: 1px;
+        border-left: 2px solid #1441b7;
+        border-right: 2px solid #1441b7;
+        border-bottom: 2px solid #1441b7;
+    }
+
+    .email-form form .form-group input#object {
+        border: 1px;
+        border-right: 2px solid #1441b7;
+        border-left: 2px solid #1441b7;
+    }
+
+    .email-form form button {
+        border-top: none;
+        width: 100%;
+    }
+
+    .email-form form input::placeholder,
+    textarea::placeholder,
+    button {
+        color: #145ce8;
+    }
+
+    .email-form form input:focus,
+    textarea:focus {
+        outline: none;
+    }
+    
     header {
         transition: transform 0.3s ease-out;
     }
