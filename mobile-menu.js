@@ -32,10 +32,6 @@ window.addEventListener('load', function() {
     });
 
     function toggleMenu(){
-        // navLinkUl.classList.toggle('display-none');
-        // navLinkUl.classList.toggle('hide');
-        // navLinkUl.classList.toggle('show');
-
         if (navLinkUl.classList.contains('closed')) {
             navLinkUl.classList.toggle('opened');
             navLinkUl.classList.toggle('closed');
@@ -53,38 +49,17 @@ window.addEventListener('load', function() {
             }, 1000);
         }
     }
-
-    function hideMenu(){
-        navLinkUl.classList.add('display-none');
-        navLinkUl.classList.add('hide');
-        navLinkUl.classList.remove('show');
-    }
-
-    function showMenu(){
-        // navLinkUl.classList.remove('display-none');
-        navLinkUl.classList.remove('hide');
-        // navLinkUl.classList.add('show');
-    }
-
     function close(){
         hamburger.classList.toggle('open')
         hamburger.classList.toggle('close')
-        background.classList.toggle('hide')
-        background.classList.toggle('show')
-        slogan.classList.toggle('hide')
-        slogan.classList.toggle('show')
-        // navLinkUl.classList.toggle('display-flex');
-        
-        // if (navLinkUl.classList.contains('display-none')) {
-        //     navLinkUl.classList.remove('display-none');
-        // } else {
-        //     // Otherwise add display-none class after 2 seconds
-        //     setTimeout(() => {
-        //         navLinkUl.classList.add('display-none');
-        //     }, 2000);
-        // }
-        // navLinkUl.classList.toggle('hide');
-        // navLinkUl.classList.toggle('show');
-        // navLinkUl.classList.toggle('display-flex');
+        if (background)
+        {
+            background.classList.toggle('hide')
+            background.classList.toggle('show')
+        }
+        if (slogan){
+            slogan.classList.toggle('hide')
+            slogan.classList.toggle('show')
+        }
     }
 });
