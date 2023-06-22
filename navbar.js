@@ -5,7 +5,7 @@ window.onload = function() {
     const isHomepage = document.querySelector('.page.hp');
     const isMobile = window.innerWidth <= 480;
     addClickEventListeners()
-    smoothScroll()
+    if (isHomepage) {smoothScroll()} 
 
     function onScroll() {
 

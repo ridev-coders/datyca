@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, fit-to-width=yes"> 
         <title>Privacy Policy</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link
@@ -13,6 +14,10 @@
 
     <body class="blue-background page privacy">
         <script src="navbar.js"></script>
+        <script src="mobile-menu.js"></script>
+        <script>
+            screen.orientation.lock("portrait-primary");
+        </script>
         <header>
             <div class="wrapper">
                 <a href="hp.html">
@@ -25,19 +30,40 @@
                     </div>
                 </a>
                 <nav class="navbar">
-                    <ul>
-                        <li><a href="hp.html#chi-siamo">CHI SIAMO</a></li>
+                    <div class="wrapper">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul class="hide blue-background">
                         <li>
-                            <a href="hp.html#i-nostri-valori"
-                                >I NOSTRI VALORI</a
+                            <a class="scroll-link" href="hp.html#chi-siamo-mobile"
+                                >Chi siamo</a
                             >
                         </li>
-                        <li><a href="hp.html#perche-noi">PERCHÉ NOI</a></li>
                         <li>
-                            <a href="hp.html#cosa-facciamo">COSA FACCIAMO</a>
+                            <a class="scroll-link" href="hp.html#i-nostri-valori"
+                                >I nostri valori</a
+                            >
                         </li>
-                        <li><a class="selected">SETTORI</a></li>
-                        <li><a href="hp.html#contatti">CONTATTI</a></li>
+                        <li>
+                            <a class="scroll-link" href="hp.html#perche-noi"
+                                >Perché noi</a
+                            >
+                        </li>
+                        <li>
+                            <a class="scroll-link" href="hp.html#cosa-facciamo"
+                                >Cosa facciamo</a
+                            >
+                        </li>
+                        <li class="selected">
+                            <a class="scroll-link" href="settori.html">Settori</a>
+                        </li>
+                        <li>
+                            <a class="scroll-link" href="hp.html#contatti">Contatti</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
