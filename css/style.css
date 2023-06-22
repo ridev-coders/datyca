@@ -994,6 +994,7 @@ body * {
         width: 270px;
         margin-top: 188px;
         height: 100vh;
+        position: sticky;
     }
 
     .section {
@@ -1004,6 +1005,10 @@ body * {
     .section .title {
         font-size: 32px;
         line-height: 38px;
+        /* color: #f21763; */
+    }
+
+    .page.hp .section .title {
         color: #f21763;
     }
 
