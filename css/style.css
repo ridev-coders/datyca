@@ -883,6 +883,10 @@ body * {
         padding-inline-start: 0px;
     }
 
+    nav ul li.selected a {
+        color: #145ce8;
+    }
+
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -1013,6 +1017,10 @@ body * {
     .section {
         padding-bottom: 48px;
         padding-top: 30px;
+    }
+
+    .section.s1 {
+        margin-top: 120px;
     }
 
     .section.s2 {
