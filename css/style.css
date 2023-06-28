@@ -970,7 +970,7 @@ body * {
     .zero-size {
         height: 0px;
         margin: 0px;
-        padding: 0px;
+        padding: 0px!important;
     }
 
     .display-flex {
