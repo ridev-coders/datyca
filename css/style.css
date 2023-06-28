@@ -64,9 +64,9 @@ body * {
     scroll-behavior: smooth;
 }
 
-.page.privacy *,
 .page.privacy .section .content .wrapper .paragraph,
-.page.privacy .section .content .wrapper li {
+.page.privacy .section .content .wrapper li,
+.page.privacy .section .content .wrapper p {
     font-size: 16px;
     line-height: 30px;
     font-weight: 100;
@@ -1258,6 +1258,30 @@ body * {
     .email-form form input:focus,
     textarea:focus {
         outline: none;
+    }
+
+    .page.privacy .section{
+        margin-top: 120px;
+    }
+
+
+    .page.privacy .section .content .wrapper .paragraph,
+    .page.privacy .section .content .wrapper li,
+    .page.privacy .section .content .wrapper p,
+    .page.privacy .section .content p {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 100;
+        letter-spacing: 0.18;
+        margin-block-start: 0px;
+    }
+
+    .page.privacy .section .content .wrapper:first-of-type {
+        margin-block-start: 30px;
+    }
+
+    .page.privacy .section .content .wrapper li {
+        left: -4px;
     }
 
     header {
