@@ -1260,9 +1260,24 @@ body * {
         outline: none;
     }
 
+    footer{
+        margin-bottom: 35px;
+        margin-top: 200px;
+    }
+
+    footer .content p{
+        text-align: center;
+        font-size: 13px;
+    }
+
+    footer .content p a{
+        text-decoration: none;
+    }
+
     .page.privacy .section{
         margin-top: 120px;
     }
+    
 
 
     .page.privacy .section .content .wrapper .paragraph,
@@ -1310,7 +1325,7 @@ body * {
     /* .section.s4, */
     /* .section.s5, */
     /* .section.s6, */
-    footer {
+    /* footer {
         display: none;
-    }
+    } */
 }
