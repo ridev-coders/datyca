@@ -1320,3 +1320,12 @@ body * {
     }
 }
 
+
+/* TEMP STYLE */
+#settori .content .settore a{
+    pointer-events: none;
+}
+
+#settori .content .settore .square.arrow{
+    visibility: hidden;
+}
