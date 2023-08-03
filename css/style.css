@@ -1229,6 +1229,7 @@ body * {
         height: 100%;
         box-sizing: border-box;
         padding: 17px;
+        touch-action: manipulation;  
     }
 
     .email-form form .form-group input#email {
