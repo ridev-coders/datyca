@@ -729,6 +729,10 @@ body * {
         box-sizing: border-box;
     }
 
+    .email-form form .form-group select:focus-visible{
+        outline: none;
+    }
+
     .email-form form .form-group input,
     textarea, select {
         width: 100%;
@@ -1234,6 +1238,10 @@ body * {
         padding: 17px;
         touch-action: manipulation;
         color: #145ce8;
+    }
+
+    .email-form form .form-group select:focus-visible{
+        outline: none;
     }
 
     .email-form form .form-group input#email {
