@@ -1228,6 +1228,7 @@ body * {
         border: 2px solid #1441b7;
         box-sizing: border-box;
         text-align: center;
+        border-radius: 0;
     }
 
     .email-form form .form-group input,
