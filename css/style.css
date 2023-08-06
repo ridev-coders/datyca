@@ -927,10 +927,8 @@ body * {
         list-style: none;
         text-align: center;
         gap: 28px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
         z-index: 2;
-        /* position: relative; */
         transition-property: opacity, height;
         transition-duration: 1s, 4s;
         transition-timing-function: ease-in-out;
