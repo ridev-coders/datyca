@@ -888,6 +888,7 @@ body * {
 
     .navbar ul {
         padding-inline-start: 0px;
+        background: linear-gradient(89.06deg, #000517 3.87%, #041839 99.97%) ;
     }
 
     nav ul li.selected a {
