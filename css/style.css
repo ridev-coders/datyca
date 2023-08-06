@@ -197,7 +197,7 @@ div.slogan span.future.animate {
 }
 
 .page.hp #logo-container.animate {
-    animation: logo-animation 7s 1;
+    animation: logo-animation 7s 1 cubic-bezier(1,.09,.89,.4);
 }
 
 .page.hp #big-logo-container.animate {
