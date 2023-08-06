@@ -117,6 +117,95 @@ body * {
 .page.privacy .section .content .wrapper:first-of-type {
     margin-block-start: 80px;
 }
+
+@keyframes bg-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes logo-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes big-logo-animation {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slogan-animation {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes future-animation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section .content.slogan.animate {
+    animation: slogan-animation 4s 1;
+}
+
+div.slogan span.future.animate {
+    animation: future-animation 5s 1;
+}
+
+.page.hp #logo-container.animate {
+    animation: logo-animation 7s 1;
+}
+
+.page.hp #big-logo-container.animate {
+    animation: big-logo-animation 5s forwards;
+    animation-fill-mode: forwards;
+}
+
+
 /* desktop */
 @media only screen and (min-width: 481px) {
     .mobile {
@@ -235,9 +324,7 @@ body * {
         font-size: 80px;
         line-height: 95px;
     }
-    .section .content.slogan.animate {
-        animation: slogan-animation 4s 1;
-    }
+
 
     .section .content.big-logo {
         padding: 0px;
@@ -245,22 +332,13 @@ body * {
         margin-top: 240px;
     }
 
-    div.slogan span.future.animate {
-        animation: future-animation 5s 1;
-    }
+
 
     .slogan h4 {
         margin-top: 0px;
     }
 
-    .page.hp #logo-container.animate {
-        animation: logo-animation 7s 1;
-    }
 
-    .page.hp #big-logo-container.animate {
-        animation: big-logo-animation 5s forwards;
-        animation-fill-mode: forwards;
-    }
 
     .page.hp #logo-container {
         position: absolute;
@@ -293,76 +371,6 @@ body * {
     #big-logo-container img.logo {
         position: relative;
         left: -30px;
-    }
-
-    @keyframes bg-animation {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes logo-animation {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes big-logo-animation {
-        0% {
-            opacity: 0;
-        }
-
-        30% {
-            opacity: 1;
-        }
-
-        60% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }
-
-    @keyframes slogan-animation {
-        0% {
-            opacity: 0;
-        }
-
-        40% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes future-animation {
-        0% {
-            opacity: 0;
-        }
-
-        50% {
-            opacity: 0;
-        }
-
-        75% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
     }
 
     .bg-lines {
@@ -875,6 +883,21 @@ body * {
         margin-top: 20px;
         margin-left: 28px;
         z-index: 1;
+    }
+
+    #big-logo-container img.logo {
+        position: relative;
+        left: -12px;
+    }
+
+    .page.hp #big-logo-container .logo {
+        width: 80%;
+    }
+
+    .section .content.big-logo {
+        padding: 0px;
+        position: absolute;
+        margin-top: 70px;
     }
 
     header,
