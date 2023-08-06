@@ -603,6 +603,10 @@ body * {
         width: 100%;
     }
 
+    #settori .content {
+        padding-top: 200px;
+    }
+
     #settori .content .four-links {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -675,7 +679,7 @@ body * {
 
     #contatti .two-columns .locations.column ul h5 {
         margin-bottom: 0px;
-        font-weight: 350;
+        font-weight: 700;
     }
 
     #contatti .two-columns .locations.column ul p {
