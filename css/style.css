@@ -865,7 +865,6 @@ div.slogan span.future.animate {
     main {
         margin: 0;
         padding: 0;
-        /* background: #000; */
     }
 
     .blue-background {
@@ -905,6 +904,7 @@ div.slogan span.future.animate {
         position: fixed;
         top: 0;
         width: 100%;
+        /* height: 100%; */
         z-index: 1;
     }
 
@@ -1004,6 +1004,10 @@ div.slogan span.future.animate {
         height: 0px;
         margin: 0px;
         padding: 0px!important;
+    }
+
+    .full-height{
+        height: 100%;
     }
 
     .display-flex {
