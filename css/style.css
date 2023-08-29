@@ -351,6 +351,11 @@ div.slogan span.future.animate {
         cursor: pointer;
     }
 
+    .page.hp #logo-container .content{
+        position: relative;
+        height: 100%;
+    }
+
     .page.hp #big-logo-container {
         height: 300px;
     }
@@ -366,7 +371,9 @@ div.slogan span.future.animate {
     }
 
     #logo-container img.logo {
-        height: 100%;
+        height: 80%;
+        position: absolute;
+        bottom: 10px;
     }
 
     #big-logo-container img.logo {
