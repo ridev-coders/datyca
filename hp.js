@@ -20,5 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         bigLogoContainer.style.display = 'none';
     }
-
 });
+// Reset scroll position when navigating back
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
