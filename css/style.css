@@ -223,6 +223,7 @@ div.slogan span.future.animate {
         min-width: 920px;
         padding-left: 4%;
         padding-right: 4%;
+        grid-template-rows: 800px auto;
     }
 
     main section {
