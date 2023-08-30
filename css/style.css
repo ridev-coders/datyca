@@ -884,12 +884,17 @@ div.slogan span.future.animate {
     .logo {
         width: 50%;
         z-index: 1;
+        /* padding-left: 25px; */
     }
 
     #logo-container {
         margin-top: 20px;
         margin-left: 28px;
         z-index: 1;
+    }
+
+    #logo-container .content{
+        padding-left: 25px;
     }
 
     #big-logo-container img.logo {
