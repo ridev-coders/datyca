@@ -1283,6 +1283,7 @@ div.slogan span.future.animate {
         box-sizing: border-box;
         text-align: center;
         border-radius: 0;
+        text-align-last:center;
     }
 
     .email-form form .form-group input,
