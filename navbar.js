@@ -56,8 +56,13 @@ window.onload = function() {
             navbar.classList.add('visible');
         } else {
             // We're scrolling down
-            navbar.classList.add('invisible');
-            navbar.classList.remove('visible');
+            if (isMobile){
+                navbar.classList.add('slide-up');
+                navbar.classList.remove('slide-down');
+            } else {
+                navbar.classList.add('invisible');
+                navbar.classList.remove('visible');
+            }
         }
     }
 
@@ -78,10 +83,19 @@ window.onload = function() {
     }
 
     // show or hide the navbar in mobile when scroll up and down
+    let prevScrollPos = window.pageYOffset;
     function showHideMobileNavbar() {
-        if (isMobile && window.pageYOffset === 0) {
-            document.querySelector('header').classList.remove('slide-up');
-            document.querySelector('header').classList.add('slide-down');
+        const currentScrollPos = window.pageYOffset;
+  
+        if (isMobile) {
+            if (currentScrollPos > prevScrollPos) {
+                document.querySelector('header').classList.add('slide-up');
+                document.querySelector('header').classList.remove('slide-down');
+            } else {
+                document.querySelector('header').classList.add('slide-down');
+                document.querySelector('header').classList.remove('slide-up');
+            }
+            prevScrollPos = currentScrollPos;
         }
     }
 
