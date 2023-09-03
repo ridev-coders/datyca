@@ -13,18 +13,19 @@
     </head>
 
     <body class="blue-background page privacy">
+        <script src="menu.js"></script>
         <script src="navbar.js"></script>
         <script src="mobile-menu.js"></script>
         <script>
             screen.orientation.lock("portrait-primary");
         </script>
-        <header>
+        <header class="blue-background">
             <div class="wrapper">
-                <a href="hp.html">
-                    <div id="logo-container">
+                <a id="logo-container" href="hp.html" class="scroll-link">
+                    <div class="content">
                         <img
                             class="logo"
-                            src="img/datyca-logo-white-small.svg"
+                            src="img/logo_datyca.svg"
                             alt="Datyca Logo"
                         />
                     </div>
@@ -37,7 +38,7 @@
                             <span></span>
                         </div>
                     </div>
-                    <ul class="hide blue-background">
+                    <ul class="hide">
                         <li>
                             <a class="scroll-link" href="hp.html#chi-siamo-mobile"
                                 >Chi siamo</a
