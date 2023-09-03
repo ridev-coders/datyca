@@ -896,6 +896,12 @@ div.slogan span.future.animate {
     #logo-container .content{
         padding-left: 25px;
     }
+    
+    #logo-container .logo{
+        padding-left: 25px;
+        z-index: 2;
+        position: relative;
+    }
 
     #big-logo-container img.logo {
         position: relative;
@@ -910,6 +916,11 @@ div.slogan span.future.animate {
         padding: 0px;
         position: absolute;
         margin-top: 70px;
+    }
+
+    header {
+        transition: height 1s ease-in-out;
+        height: initial;
     }
 
     header,
@@ -928,7 +939,6 @@ div.slogan span.future.animate {
 
     .navbar ul {
         padding-inline-start: 0px;
-        background: linear-gradient(89.06deg, #000517 3.87%, #041839 99.97%) ;
     }
 
     nav ul li.selected a {

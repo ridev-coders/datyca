@@ -53,12 +53,10 @@ window.onload = function() {
         if (window.pageYOffset === 0) {
             // We're at the top of the page
             navbar.classList.remove('invisible');
-            navbar.classList.remove('blue-background');
             navbar.classList.add('visible');
         } else {
             // We're scrolling down
             navbar.classList.add('invisible');
-            navbar.classList.add('blue-background');
             navbar.classList.remove('visible');
         }
     }

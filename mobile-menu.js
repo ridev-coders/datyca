@@ -15,6 +15,8 @@ window.addEventListener('load', function() {
         navLinkUl.classList.add('hide');
         navLinkUl.classList.add('closed');
     }  
+
+
     // Toggle menu and classes when hamburger is clicked
     hamburger.addEventListener('click', () => {
         close()
@@ -42,7 +44,6 @@ window.addEventListener('load', function() {
             navLinkUl.classList.toggle('hide');
             navbar.classList.toggle('full-height');
             header.classList.toggle('full-height');
-            header.classList.toggle('blue-background');
             logo.classList.toggle('hide');
             // navLinkUl.classList.toggle('show');
         } else {
@@ -50,13 +51,14 @@ window.addEventListener('load', function() {
             navLinkUl.classList.toggle('hide');
             navLinkUl.classList.toggle('closed');
             navLinkUl.classList.toggle('opened');
-            header.classList.toggle('blue-background');
             navbar.classList.toggle('full-height');
-            header.classList.toggle('full-height');
+            header.classList.toggle('hide')
             logo.classList.toggle('hide');
             // navLinkUl.classList.toggle('show');
             setTimeout(() => {
                 navLinkUl.classList.add('zero-size');
+                header.classList.toggle('full-height');
+                header.classList.toggle('hide')
             }, 1000);
         }
     }
