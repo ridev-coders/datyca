@@ -15,8 +15,19 @@ window.onload = function() {
         backgroundStyle();
         showHideMobileNavbar();
     }
+    // Debounce function:
+    // you can debounce the onScroll function, 
+    // which will limit the number of times it is called during scroll events.
+    function debounce(func, delay) {
+        let timer;
+        return function(...args) {
+            clearTimeout(timer);
+            timer = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
 
-    window.addEventListener('scroll', onScroll);
+    const debouncedScroll = debounce(onScroll, 100); // Adjust the delay as needed
+    window.addEventListener('scroll', debouncedScroll);
 
     // change style for anchors links
     function linksStyle() {
@@ -57,8 +68,8 @@ window.onload = function() {
         } else {
             // We're scrolling down
             if (isMobile){
-                navbar.classList.add('slide-up');
-                navbar.classList.remove('slide-down');
+                // navbar.classList.add('slide-up');
+                // navbar.classList.remove('slide-down');
             } else {
                 navbar.classList.add('invisible');
                 navbar.classList.remove('visible');
