@@ -8,6 +8,7 @@ window.addEventListener('load', function() {
     const navLinks = document.querySelectorAll('.navbar ul li');
     const header = document.querySelector('header');
     const navbar = document.querySelector('.navbar');
+    const logo = document.querySelector('#logo-container');
     // not display menu in mobile
     if (window.matchMedia("(max-width: 480px)").matches) {
         navLinkUl.classList.add('zero-size');
@@ -42,6 +43,7 @@ window.addEventListener('load', function() {
             navbar.classList.toggle('full-height');
             header.classList.toggle('full-height');
             header.classList.toggle('blue-background');
+            logo.classList.toggle('hide');
             // navLinkUl.classList.toggle('show');
         } else {
             // Otherwise add display-none class after 2 seconds
@@ -51,6 +53,7 @@ window.addEventListener('load', function() {
             header.classList.toggle('blue-background');
             navbar.classList.toggle('full-height');
             header.classList.toggle('full-height');
+            logo.classList.toggle('hide');
             // navLinkUl.classList.toggle('show');
             setTimeout(() => {
                 navLinkUl.classList.add('zero-size');
