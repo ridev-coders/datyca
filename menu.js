@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.menu-section');
-    
-    // Store the height of each section in a data attribute
+
     Array.from(sections).forEach(section => {
         section.dataset.height = section.scrollHeight;
         section.dataset.paddingBottom = 25;
@@ -13,25 +12,32 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetSection = document.querySelector('.menu-section.' + target);
             const parent = button.parentElement
 
-            // Loop through all sections and set their height to 0
-            Array.from(sections).forEach(section => {
-                section.style.height = 0;
-                section.style.paddingBottom = 0;
-            });
-
-            // Remove the "active" class from all buttons and elements
-            document.querySelectorAll('.side-menu .button, .side-menu .element').forEach(element => {
-                element.classList.remove('active');
-            });
-
-            // Set the height of the target section to its stored height
-            targetSection.style.display = 'block';
-            targetSection.style.height = targetSection.dataset.height + 'px';
-            targetSection.style.paddingBottom = targetSection.dataset.paddingBottom + 'px';
-
-            // Add the "active" class to the current button and its parent element
-            button.classList.add('active')
-            parent.classList.add('active')
+            if (button.classList.contains('active')) {
+                Array.from(sections).forEach(section => {
+                    section.style.height = 0;
+                    section.style.paddingBottom = 0;
+                });
+                
+                document.querySelectorAll('.side-menu .button, .side-menu .element').forEach(element => {
+                    element.classList.remove('active');
+                });
+            } else {
+                Array.from(sections).forEach(section => {
+                    section.style.height = 0;
+                    section.style.paddingBottom = 0;
+                });
+                
+                document.querySelectorAll('.side-menu .button, .side-menu .element').forEach(element => {
+                    element.classList.remove('active');
+                });
+    
+                targetSection.style.display = 'block';
+                targetSection.style.height = targetSection.dataset.height + 'px';
+                targetSection.style.paddingBottom = targetSection.dataset.paddingBottom + 'px';
+    
+                button.classList.add('active');
+                parent.classList.add('active');
+            }
         });
     });
 });
