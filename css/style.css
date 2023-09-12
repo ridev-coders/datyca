@@ -601,7 +601,7 @@ div.slogan span.future.animate {
         letter-spacing: 0.01em;
         height: 0px;
         overflow-y: hidden;
-        transition: height 0.3s ease;
+        transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
     }
 
     #cosa-facciamo .side-menu .element.active .menu-section {
@@ -1136,7 +1136,7 @@ div.slogan span.future.animate {
         font-size: 18px;
         line-height: 25px;
         letter-spacing: 0.01em;
-        transition: height 0.3s ease;
+        transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
         height: 0px;
         overflow-y: hidden;
     }
