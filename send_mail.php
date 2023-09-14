@@ -5,7 +5,7 @@
   $messageBody = $_POST['message-body'];
 
   // Build email message
-  $to = 'youremail@example.com'; // Replace with your email address
+  $to = 'r.ferrara@ridev.fr';
   $subject = $object;
   $message = "From: $email\n\n$messageBody";
 
@@ -13,5 +13,9 @@
   mail($to, $subject, $message);
 
   // Redirect back to the form page
-  header('Location: index.html');
+  if(mail($to, $subject, $message)) {
+    echo "Email sent successfully!";
+  } else {
+    echo "Unable to send email. Please try again later.";
+  }
 ?>
