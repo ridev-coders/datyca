@@ -218,12 +218,15 @@ div.slogan span.future.animate {
     }
 
     main {
-        display: grid;
         grid-row-gap: 240px;
         min-width: 920px;
         padding-left: 4%;
         padding-right: 4%;
         grid-template-rows: 800px auto;
+    }
+
+    .page.hp main {
+        display: grid;
     }
 
     main section {
